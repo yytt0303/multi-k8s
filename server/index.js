@@ -34,10 +34,6 @@ const redisClient = redis.createClient({
 const redisPublisher = redisClient.duplicate();
 
 // Express route handlers
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/master
 app.get('/', (req, res) => {
   res.send('Hi');
 });
@@ -56,10 +52,6 @@ app.get('/values/current', async (req, res) => {
 
 app.post('/values', async (req, res) => {
   const index = req.body.index;
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/master
   if (parseInt(index) > 40) {
     return res.status(422).send('Index too high');
   }
