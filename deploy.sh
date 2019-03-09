@@ -10,6 +10,6 @@ docker push dckr303/multi-server:$SHA
 docker push dckr303/multi-worker:$SHA
 
 kubectl apply -f k8s
-kubectl set image deployments/server-deploment server=dckr303/multi-server:$SHA
-kubectl set image deployments/client-deploment client=dckr303/multi-client:$SHA
-kubectl set image deployments/worker-deploment worker=dckr303/multi-worker:$SHA
+kubectl set image deployments/server-deployment server=dckr303/multi-server:$SHA
+kubectl set image deployments/client-deployment client=dckr303/multi-client:$SHA
+kubectl set image deployments/worker-deployment worker=dckr303/multi-worker:$SHA
