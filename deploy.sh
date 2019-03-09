@@ -1,6 +1,6 @@
-docker build -t dckr303/multi-client:latest -t dckr303/multi-client:$SHA -f ./client/Dockerfile.dev ./client
-docker build -t dckr303/multi-server:latest -t dckr303/multi-server:$SHA -f ./server/Dockerfile.dev ./server
-docker build -t dckr303/multi-worker:latest -t dckr303/multi-worker:$SHA -f ./worker/Dockerfile.dev ./worker
+docker build -t dckr303/multi-client:latest -t dckr303/multi-client:$SHA -f ./client/Dockerfile ./client
+docker build -t dckr303/multi-server:latest -t dckr303/multi-server:$SHA -f ./server/Dockerfile ./server
+docker build -t dckr303/multi-worker:latest -t dckr303/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 docker push dckr303/multi-client:latest
 docker push dckr303/multi-server:latest
 docker push dckr303/multi-worker:latest
